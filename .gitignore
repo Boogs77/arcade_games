@@ -1,0 +1,7 @@
+# local only
+CLAUDE.md
+PROPOSTA.md
+.claude/
+dev/
+tmp/
+__pycache__/

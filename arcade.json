@@ -1,0 +1,1160 @@
+{
+  "format": "arcade-catalog",
+  "version": 1,
+  "title": "MINIVIC ARCADE",
+  "songs": "all",
+  "entries": [
+    {
+      "id": "1vs1",
+      "name": "1 vs 1 Basketball",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "1vs1.bin"
+      },
+      "zone": 2,
+      "inspired": "",
+      "maker": "",
+      "players": "1-2",
+      "description": "One-on-one basketball with shots, jumps, steals and blocks. 2 and 3 point shots, first to 21 wins. Play against a friend or against the computer.",
+      "preview": "previews/1vs1.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "asteroids",
+      "name": "Asteroids",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "asteroids.bin"
+      },
+      "zone": 8,
+      "inspired": "Asteroids",
+      "maker": "Atari 1979",
+      "players": "1-2",
+      "description": "Atari 1979: vector-style asteroids that split in three sizes, large and small saucers, hyperspace and the famous heartbeat. Players take turns.",
+      "preview": "previews/asteroids.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "breakout",
+      "name": "Breakout",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "breakout.bin"
+      },
+      "zone": 7,
+      "inspired": "Breakout",
+      "maker": "Atari 1976",
+      "players": "1-2",
+      "description": "Atari 1976: 8 rows of bricks in four colours, the ball speeds up and the paddle shrinks when you break through. Two walls, players take turns.",
+      "preview": "previews/breakout.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "bubbles",
+      "name": "Bubbles",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "bubbles.bin"
+      },
+      "zone": 20,
+      "inspired": "Bubbles",
+      "maker": "Williams 1982",
+      "players": "1-2",
+      "description": "Williams 1982: a soap bubble cleans a kitchen sink, sliding with inertia and growing as it eats crumbs, ants and grease (double near the drain). With eyes and a mouth it bounces sponges and brushes away, even down the drain; razor blades always pop it.",
+      "preview": "previews/bubbles.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "centipede",
+      "name": "Centipede",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "centipede.bin"
+      },
+      "zone": 3,
+      "inspired": "Centipede",
+      "maker": "Atari 1981",
+      "players": "1",
+      "description": "The classic arcade: shoot the centipede through the mushroom field, watch out for the flea and the spider. Infinite levels.",
+      "preview": "previews/centipede.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "cheese_chase",
+      "name": "Cheese Chase",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "cheese_chase.bin"
+      },
+      "zone": 51,
+      "inspired": "Lode Runner",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original digging puzzle platformer: at night Squeak the mouse steals the cheese wheels of a dairy, on floors of wooden planks and stone joined by ladders and milk pipes to hang on. Button 1 gnaws a hole in the planks on the left, button 2 on the right: the hole closes again after five seconds.",
+      "preview": "previews/cheese_chase.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "cloud_raider",
+      "name": "Cloud Raider",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "cloud_raider.bin"
+      },
+      "zone": 23,
+      "inspired": "Zaxxon",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original isometric shooter: a ship flies over fortresses built on islands floating among the clouds, while the world scrolls diagonally and the floor glides by.",
+      "preview": "previews/cloud_raider.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "core_runner",
+      "name": "Core Runner",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "core_runner.bin"
+      },
+      "zone": 26,
+      "inspired": "Major Havoc",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original space run and platform game in two parts. First the approach: fly the shuttle over a star field, shoot rocks, fighters, gunships and mines, then slip into the docking bay of the station as it slides up and down the hull.",
+      "preview": "previews/core_runner.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "crystal_gardens",
+      "name": "Crystal Gardens",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "crystal_gardens.bin"
+      },
+      "zone": 24,
+      "inspired": "Crystal Castles",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original isometric maze game: a hedgehog walks freely over the terraces of gardens floating in the night sky, climbing ramps and jumping up and down steps, and picks up every crystal seed. Magpies swoop down to steal the seeds (touch them to scare them away), a mole leaves its hole to chase you, pine cones roll down the ramps (jump over them) and when the time bar runs out the owl comes.",
+      "preview": "previews/crystal_gardens.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "deep_space_miner",
+      "name": "Deep Space Miner",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "deep_space_miner.bin"
+      },
+      "zone": 27,
+      "inspired": "Sinistar",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original space mining shooter in a sector of 8 x 8 screens that wraps round, with a radar at the top. Fly the drill ship with inertia, shoot the rocks to break crystals out of them and pick them up: every crystal is a seismic charge.",
+      "preview": "previews/deep_space_miner.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "defender",
+      "name": "Defender",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "defender.bin"
+      },
+      "zone": 11,
+      "inspired": "Defender",
+      "maker": "Williams 1981",
+      "players": "1",
+      "description": "Williams 1981: a scrolling planet that wraps around, scanner, landers kidnapping humanoids, mutants, bombers, pods, swarmers and baiters; laser, smart bombs, hyperspace.",
+      "preview": "previews/defender.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "dune_ranger",
+      "name": "Dune Ranger",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "dune_ranger.bin"
+      },
+      "zone": 28,
+      "inspired": "Moon Patrol",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original side-scrolling rover game on a red desert planet. Drive from outpost to outpost while the mesas, the dunes and the track scroll at different speeds: RIGHT goes faster, LEFT slower.",
+      "preview": "previews/dune_ranger.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "exerion",
+      "name": "Exerion",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "exerion.bin"
+      },
+      "zone": 19,
+      "inspired": "Exerion",
+      "maker": "Jaleco 1983",
+      "players": "1-2",
+      "description": "Jaleco 1983: a fighter with inertia, free to fly over the whole screen: black sky above, below the ground rushes towards you in pseudo-3D bands, with the hills on the horizon moving in parallax. Formations of crosses, egg-throwing birds, jets and UFOs come from the horizon, growing as they approach, then close in a ring around the fighter, turn round it and dive at it.",
+      "preview": "previews/exerion.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "ghost_ghust",
+      "name": "Ghost & Ghust",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "ghost_ghust.bin"
+      },
+      "zone": 31,
+      "inspired": "Bubble Bobble",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original single-screen platform game: two kind little ghosts, Ghost and Ghust (two players at the same time), take back their abandoned villa room by room, from the cellar up to the tower, 30 rooms. Shoot a round cloud at a creature to shut it inside, then touch the cloud to pop it: the creature falls as a sweet, and clouds that touch pop together for 1000, 2000, 4000 and 8000 points.",
+      "preview": "previews/ghost_ghust.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "gravitar",
+      "name": "Gravitar",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "gravitar.bin"
+      },
+      "zone": 16,
+      "inspired": "Gravitar",
+      "maker": "Atari 1982",
+      "players": "1-2",
+      "description": "Atari 1982: fly from planet to planet of 3 solar systems while the death star pulls the ship in, blast the bunkers, pull up fuel cells with the tractor beam, raise the shield, fight the alien saucer in deep space and blow up the reactor of the red planet before the clock runs out. Then the universe changes: negative gravity, invisible landscape, both. Players take turns.",
+      "preview": "previews/gravitar.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "haunted_keep",
+      "name": "Haunted Keep",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "haunted_keep.bin"
+      },
+      "zone": 52,
+      "inspired": "Berzerk",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original maze shooter: Sir Bram the knight walks the 64 halls of a haunted castle, seen from above. Hold a button and push a direction to shoot an arrow in one of eight directions. The suits of armor walk towards him and break on the walls, on each other and under the arrows; from the third hall on they throw axes, more often and faster hall after hall.",
+      "preview": "previews/haunted_keep.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "hedge_hop",
+      "name": "Hedge Hop",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "hedge_hop.bin"
+      },
+      "zone": 40,
+      "inspired": "Frogger",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original crossing game: Spike the hedgehog goes home to the hedge. First a country road with a milk truck, motorbikes, cars and tractors, then a stream crossed on floating logs and lily pads, some of which go under now and then. One hop a lane, 30 seconds a hedgehog, five holes in the hedge to fill.",
+      "preview": "previews/hedge_hop.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "joust",
+      "name": "Joust",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "joust.bin"
+      },
+      "zone": 18,
+      "inspired": "Joust",
+      "maker": "Williams 1982",
+      "players": "1-2",
+      "description": "Williams 1982: a knight on a flying ostrich, and a second one on a stork with both players at the same time. Flap to climb: the higher lance wins. Bounders, Hunters and Shadow Lords leave eggs to pick up before they hatch, the pterodactyl must be hit in the beak, the hand of the troll grabs who flies low over the lava and the bridge burns away. Survival, Team, Gladiator and Egg waves.",
+      "preview": "previews/joust.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "lighthouse_keeper",
+      "name": "Lighthouse Keeper",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "lighthouse_keeper.bin"
+      },
+      "zone": 42,
+      "inspired": "Donkey Kong",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original climbing game: on a stormy night Gus the keeper climbs back to relight his lighthouse, while Squawk the seagull throws coconuts that roll down the sloping planks and now and then down a ladder. Jump over them, or take a broom and sweep them away for a few seconds.",
+      "preview": "previews/lighthouse_keeper.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "little_6502_guy",
+      "name": "Little 6502 Guy",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "little_6502_guy.bin"
+      },
+      "zone": 39,
+      "inspired": "Little Computer People",
+      "maker": "Original game",
+      "players": "1",
+      "description": "An original life-sim toy: Six, a tiny technician, lives in a three-floor house built on the 6502 chip of your miniVIC, with Byte, his black cat. He eats, drinks, takes baths, sleeps, reads, plays piano records and dances, rides the exercise bike, tinkers in the workshop and types letters to you, all on his own and by the clock of the house.",
+      "preview": "previews/little_6502_guy.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "lix",
+      "name": "Lix",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "lix.bin"
+      },
+      "zone": 50,
+      "inspired": "Qix",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original territory game: Flora the gardener runs along the hedges of a wild lawn and plants new hedge in the tall grass. When the new hedge meets the old one, the part without the tornado becomes a flower bed. Hold button 1 for a fast hedge, button 2 for a slow one that is worth double.",
+      "preview": "previews/lix.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "lunar_lander",
+      "name": "Lunar Lander",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "lunar_lander.bin"
+      },
+      "zone": 5,
+      "inspired": "Lunar Lander",
+      "maker": "Atari 1979",
+      "players": "1",
+      "description": "Land the module softly on the moon pads: smaller pads pay more, plus a leftover fuel bonus. 6 moon maps, 3 landers. Full bitmap graphics.",
+      "preview": "previews/lunar_lander.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "missile_command",
+      "name": "Missile Command",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "missile_command.bin"
+      },
+      "zone": 4,
+      "inspired": "Missile Command",
+      "maker": "Atari 1980",
+      "players": "1-2",
+      "description": "Defend 6 cities from incoming missiles using 3 bases. The second player can join at any time. Full bitmap graphics.",
+      "preview": "previews/missile_command.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "mole_hole",
+      "name": "Mole Hole",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "mole_hole.bin"
+      },
+      "zone": 41,
+      "inspired": "Dig Dug",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original digging game: Mole the mole digs tunnels under a vegetable garden, through soil, clay, gravel and rock. Grubs follow the tunnels and now and then creep through the earth, the mole cricket digs new tunnels of its own. Mole's ice ray freezes a bug a little more at every hit: the third time it becomes a block of ice and breaks, worth more the deeper it is.",
+      "preview": "previews/mole_hole.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "moon_cresta",
+      "name": "Moon Cresta",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "moon_cresta.bin"
+      },
+      "zone": 14,
+      "inspired": "Moon Cresta",
+      "maker": "Nichibutsu 1980",
+      "players": "1-2",
+      "description": "Nichibutsu 1980: a three-stage rocket where every stage is a life, timed docking with retro rockets for a bonus and more firepower, and waves of Cold Eyes that split in two, Super Flies, Four-Ds, meteors and Atomic Piles, with a start tune. Players take turns.",
+      "preview": "previews/moon_cresta.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "paint_duel",
+      "name": "Paint Duel",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "paint_duel.bin"
+      },
+      "zone": 43,
+      "inspired": "Tron",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original paint-trail duel: two painters push their rollers over a polished floor, and every roller leaves a stripe of wet paint behind. The rollers never stop; the joystick turns them left or right. Roll into wet paint (yours or the other's), the skirting board, a paint can or the table and the round is lost. The button gives a short sprint, three a round.",
+      "preview": "previews/paint_duel.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "pastry_panic",
+      "name": "Pastry Panic",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "pastry_panic.bin"
+      },
+      "zone": 53,
+      "inspired": "BurgerTime",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original platform game: Chef Pip builds four cakes in a pastry shop of shelves and ladders. Walk over a cake layer (sponge, cream, chocolate, icing) from end to end and it falls to the next shelf; a layer falling on another one pushes it down, and under the last shelf the layers pile up on the plates.",
+      "preview": "previews/pastry_panic.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "quantum",
+      "name": "Quantum",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "quantum.bin"
+      },
+      "zone": 17,
+      "inspired": "Quantum",
+      "maker": "Atari 1982",
+      "players": "1-2",
+      "description": "Atari 1982: guide your probe with inertia like a trackball to draw loops around particles and destroy them. Multiple particles in one loop multiply the score. Progressively harder waves with nuclei that release positrons, splitters that divide and pulsars that hunt. Players take turns.",
+      "preview": "previews/quantum.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "radar_scope",
+      "name": "Radar Scope",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "radar_scope.bin"
+      },
+      "zone": 12,
+      "inspired": "Radar Scope",
+      "maker": "Nintendo 1980",
+      "players": "1-2",
+      "description": "Nintendo 1980: a field in perspective with a blue sky and a curved radar grid, 48 Gamma Raiders that hover forward, dive and drop decoys, and a damage meter that slows down the laser. Players take turns.",
+      "preview": "previews/radar_scope.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "robert",
+      "name": "Robert",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "robert.bin"
+      },
+      "zone": 22,
+      "inspired": "Q*bert",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original isometric cube-hopping game: Robert, a little robot on a pogo stick, hops diagonally across boards of cubes floating in the void and paints every top in the goal colour, without hopping off the edge. Four boards (diamond, hourglass, ring, twin towers) and four colour rules (one hop, two hops, every hop switches, a third hop undoes).",
+      "preview": "previews/robert.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "robo_vac",
+      "name": "Robo Vac",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "robo_vac.bin"
+      },
+      "zone": 38,
+      "inspired": "Pac-Man",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original maze-chase game: a little robot vacuum cleans the house room by room, from the kitchen to the attic, 8 rooms and then the house again, faster. Four dust bunnies hunt it: Fluff follows it, Lint cuts it off, Fuzz dashes when it sees it, Grit guards the wall sockets.",
+      "preview": "previews/robo_vac.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "room",
+      "name": "Room",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "room.bin"
+      },
+      "zone": 34,
+      "inspired": "Doom",
+      "maker": "Original game",
+      "players": "1",
+      "description": "An original first-person maze shooter: a mining base on a moon has gone mad and a technician goes down level by level to the reactor, 8 levels and then the base again, faster. Step from cell to cell and turn by quarters while the corridors are drawn in perspective; strafe, switch weapons and look at the map of the places already seen with button 2.",
+      "preview": "previews/room.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "sky_squirrel",
+      "name": "Sky Squirrel",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "sky_squirrel.bin"
+      },
+      "zone": 33,
+      "inspired": "Bomb Jack",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original jump and glide platform game: Pip, a flying squirrel, gathers the 24 acorns a storm scattered on every stage, 15 stages in five places (an oak wood, a waterfall, an old mill, the city roofs, the snow peaks), then the world again, faster. Hold the button to jump higher, press it again in the air to glide down slowly.",
+      "preview": "previews/sky_squirrel.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "sky_tug",
+      "name": "Sky Tug",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "sky_tug.bin"
+      },
+      "zone": 29,
+      "inspired": "Terra Cresta",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original vertical-scrolling shooter: a space tug flies over a planet of islands, a sunken city, a crystal forest and an enemy base while the ground scrolls smoothly 2 pixels at a time. Air waves (fighters in V, spiralling hawks, hovering drones, bombers) and ground targets (tanks, turrets, boats, missile launchers) attack.",
+      "preview": "previews/sky_tug.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "space_firebird",
+      "name": "Space Firebird",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "space_firebird.bin"
+      },
+      "zone": 13,
+      "inspired": "Space Firebird",
+      "maker": "Nintendo 1980",
+      "players": "1-2",
+      "description": "Nintendo 1980: a scrolling starfield, Firebirds that arrive as comets, loop the loop and turn into Gulls, Eagles and Emperors; eagle bombs that burst into shrapnel, a once-per-ship shielded warp and a PERFECT bonus for 50 birds out of 50. Players take turns.",
+      "preview": "previews/space_firebird.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "space_invaders",
+      "name": "Space Invaders",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "space_invaders.bin"
+      },
+      "zone": 9,
+      "inspired": "Space Invaders",
+      "maker": "Taito 1978",
+      "players": "1-2",
+      "description": "Taito 1978: 55 invaders that march one at a time, shields that crumble pixel by pixel, three kinds of bombs, mystery saucer and the four-note march. Colour bands of the cabinet overlay.",
+      "preview": "previews/space_invaders.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "special_forces",
+      "name": "Special Forces",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "special_forces.bin"
+      },
+      "zone": 25,
+      "inspired": "Green Beret",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original side-scrolling action game: a commando crosses an enemy camp from left to right, running on the ground and on two floors of steel walkways joined by ladders. Knife the sentries, kneel under the riflemen's bullets, jump over barbed wire and mines, and take a machine gun, a mortar or a timed charge from the couriers.",
+      "preview": "previews/special_forces.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "stargate",
+      "name": "Stargate",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "stargate.bin"
+      },
+      "zone": 15,
+      "inspired": "Stargate",
+      "maker": "Williams 1981",
+      "players": "1-2",
+      "description": "Williams 1981, the sequel to Defender: the Stargate that jumps to the humanoid in danger (or warps 3 waves ahead with 4 humanoids on board), Inviso cloaking, several humanoids carried at once, Firebombers, Yllabian Space Guppies, Dynamos, Phreds and Big Reds, plus the Yllabian Dogfight and Firebomber Showdown waves. Players take turns.",
+      "preview": "previews/stargate.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "super_carlo",
+      "name": "Super Carlo",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "super_carlo.bin"
+      },
+      "zone": 30,
+      "inspired": "Mario Bros",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original single-screen platform game in a shipyard where a cruise ship is being built. Carlo the welder (and his mate Fabio, two players at the same time) clears the decks of rats, riveter robots and gulls that come in through the hatches: jump under a steel deck to bump it and turn over whoever walks on it, then kick them into the sea before they get up again, faster.",
+      "preview": "previews/super_carlo.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "tank",
+      "name": "Tank vs Tank",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "tank.bin"
+      },
+      "zone": 1,
+      "inspired": "",
+      "maker": "",
+      "players": "1-2",
+      "description": "Two tanks on a green battlefield: rotate, move and shoot. First to reach the winning score wins. Play against a friend or against the computer.",
+      "preview": "previews/tank.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "the_warriors",
+      "name": "The Warriors",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "the_warriors.bin"
+      },
+      "zone": 6,
+      "inspired": "Street Fighter",
+      "maker": "Capcom 1987",
+      "players": "1-2",
+      "description": "Street Fighter style fighting game: 5 warriors, 6 stages, punch, kick, block and special move. Best of 3 rounds. Play against a friend or against the computer.",
+      "preview": "previews/the_warriors.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "times_tables",
+      "name": "Times Tables",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "times_tables.bin"
+      },
+      "zone": 21,
+      "inspired": "",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original educational game (screen texts in Italian, TABELLINE): the times tables from 1 to 10, one question and four answers in a cross, chosen with one push of the joystick. Practice with help, a challenge with a red two-digit countdown like a basketball scoreboard, and a duel against a friend or the computer.",
+      "preview": "previews/times_tables.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "warlords",
+      "name": "Warlords",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "warlords.bin"
+      },
+      "zone": 10,
+      "inspired": "Warlords",
+      "maker": "Atari 1980",
+      "players": "1-2",
+      "description": "Atari 1980: four castles, shields on an L-shaped track, catch and throw the fireball. 1 or 2 players against the computer castles; first to 3 rounds wins.",
+      "preview": "previews/warlords.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "wormer",
+      "name": "Wormer",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "wormer.bin"
+      },
+      "zone": 32,
+      "inspired": "Nibbler",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original maze game with a growing body: a caterpillar that never stops crawls through the tunnels of a giant apple, slice by slice down to the core, 24 slices and then again faster. Every seed makes it one piece longer and it must never bite its own tail. The joystick books the next turn at the first crossing; at a bend it turns by itself.",
+      "preview": "previews/wormer.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "zork1_joy",
+      "name": "Zork I",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "zork1_joy.bin"
+      },
+      "zone": 35,
+      "inspired": "Zork I",
+      "maker": "Infocom 1980",
+      "players": "1",
+      "description": "The same story, with the sentences made of words chosen from menus with the joystick.",
+      "preview": "previews/zork1_joy.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "zork2_joy",
+      "name": "Zork II",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "zork2_joy.bin"
+      },
+      "zone": 36,
+      "inspired": "Zork II",
+      "maker": "Infocom 1981",
+      "players": "1",
+      "description": "The same story, with the sentences made of words chosen from menus with the joystick.",
+      "preview": "previews/zork2_joy.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "zork3_joy",
+      "name": "Zork III",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "zork3_joy.bin"
+      },
+      "zone": 37,
+      "inspired": "Zork III",
+      "maker": "Infocom 1982",
+      "players": "1",
+      "description": "The same story, with the sentences made of words chosen from menus with the joystick.",
+      "preview": "previews/zork3_joy.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "jukebox",
+      "name": "MiniVIC Jukebox",
+      "kind": "music",
+      "bin": {
+        "source": "apps",
+        "file": "jukebox.bin"
+      },
+      "zone": null,
+      "inspired": "",
+      "maker": "MiniVIC Sound",
+      "players": "Music player",
+      "description": "The MiniVIC Jukebox plays the songs of MiniVIC Sound on the two AY-3-8910 sound chips, in stereo. Choose a song with the joystick.",
+      "preview": "previews/jukebox.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    }
+  ]
+}

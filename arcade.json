@@ -77,6 +77,30 @@
       }
     },
     {
+      "id": "brick_drop",
+      "name": "Brick Drop",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "brick_drop.bin"
+      },
+      "zone": 54,
+      "inspired": "Tetris",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original falling-block puzzle game: pieces of four bricks fall into a well of 10 x 20 cells on a building site. Move them, turn them both ways and close the rows of the wall: a full row flashes and goes away, and four rows at once are a BRICK DROP. Seven pieces, the next one in its box and the statistics of every piece beside the well.",
+      "preview": "previews/brick_drop.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
       "id": "bubbles",
       "name": "Bubbles",
       "kind": "game",
@@ -1002,6 +1026,30 @@
       "players": "1-2",
       "description": "An original educational game (screen texts in Italian, TABELLINE): the times tables from 1 to 10, one question and four answers in a cross, chosen with one push of the joystick. Practice with help, a challenge with a red two-digit countdown like a basketball scoreboard, and a duel against a friend or the computer.",
       "preview": "previews/times_tables.png",
+      "controls": {
+        "buttons": 2,
+        "start": false
+      },
+      "credits": {
+        "mode": "launch",
+        "default": "free",
+        "coins": 1
+      }
+    },
+    {
+      "id": "turbo_horizon",
+      "name": "Turbo Horizon",
+      "kind": "game",
+      "bin": {
+        "source": "minivic",
+        "file": "turbo_horizon.bin"
+      },
+      "zone": 55,
+      "inspired": "Pole Position / Out Run",
+      "maker": "Original game",
+      "players": "1-2",
+      "description": "An original racing game seen from behind the car, on a pseudo-3D road with bends that pull the car outwards and hills that hide the road beyond the crest. Race the clock through five stages (meadow, desert, coast at sunset, snowy mountains, city at night): every checkpoint gives more time. Two gears (up = low, down = high), button 1 accelerates, button 2 brakes.",
+      "preview": "previews/turbo_horizon.png",
       "controls": {
         "buttons": 2,
         "start": false

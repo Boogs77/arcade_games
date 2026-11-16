@@ -9,8 +9,10 @@ This repository holds:
   settings, read by [bo6502-SDbuilder](https://github.com/Boogs77/bo6502-SDbuilder) to build the cabinet SD card;
 - `previews/`: the gameplay picture of every entry;
 - `tools/check_catalog.py`: checks `arcade.json` and prints the game pages as the front-end shows them;
-- later: the common library for arcade games (`lib/`), the games adapted from
-  [miniVIC_games](https://github.com/Boogs77/miniVIC_games) and new games (vasm).
+- `games/`: the games adapted from [miniVIC_games](https://github.com/Boogs77/miniVIC_games) for the cabinet
+  (credits, START, button 3), built into `bin/`;
+- `lib/arcade.asm`: the common library of the cabinet games (vasm);
+- `tools/build.ps1`, `tools/arcade_sim.js`: build and test the games.
 
 ---
 
@@ -57,7 +59,7 @@ This repository holds:
 | `controls.start` | the game reads START itself |
 | `credits.mode` | `launch`: the front-end asks for a credit before starting the game (games not adapted yet); `game`: the game handles coins and START itself |
 | `credits.default` | `free` (free play) or `coin`: factory setting, the SERVICE menu can change it per game |
-| `credits.coins` | coins for one credit (1-9) |
+| `credits.coins` | coins for one credit: always 1 |
 
 The front-end lists the entries in **alphabetical order** of `name`, with the music entry last: the order in the
 file does not matter.
@@ -111,8 +113,60 @@ The binaries are looked up in the sibling folders `../MiniVIC Games/bin` and `..
 | START | starts a game (P1 START = 1 player, P2 START = 2 players, in adapted games) |
 | BUTTON 1, 2 | as on the miniVIC |
 | BUTTON 3 | when a game needs it |
-| COIN P1 / P2 | credits (coming: the front-end ignores them for now, free play) |
+| COIN P1 / P2 | one coin = one credit, at most 9 (counted by the Arcade BIOS); FREE PLAY is chosen per game in the system test |
 | P1 START + P2 START for 2 s | back to the front-end (Arcade BIOS) |
+
+---
+
+## 👾 Adapted games
+
+| Game | Zone | Button 3 | Notes |
+| :--- | :---: | :--- | :--- |
+| Asteroids | 8 | thrust, like UP (the THRUST button of the original) | |
+| Breakout | 7 | serves, like buttons 1 and 2 | |
+| Centipede | 3 | fires, like buttons 1 and 2 | |
+| Gravitar | 16 | thrust, like UP (the THRUST button of the original) | |
+| Lunar Lander | 5 | main engine, like UP and the other buttons | screen copy moved to `$4800` to make room for the library |
+| Missile Command | 4 | fires from the right base | on the cabinet buttons 1-3 = left, centre, right base as on the original (an empty base: the nearest one); elsewhere button 1 = nearest, 2 = centre |
+| Quantum | 17 | brakes, like buttons 1 and 2 | |
+| Space Invaders | 9 | fires, like buttons 1 and 2 | pilot game; CREDIT also on the bottom row during the game, as on the cabinet |
+
+Every adapted game works the same way:
+- **title**: `INSERT COIN`, `PRESS 1P START` (one credit), `PRESS 1P OR 2P START` (two credits or more, or
+  free play) and `CREDIT 0n` / `FREE PLAY`; **P1 START** = 1 player (1 credit), **P2 START** = 2 players
+  (2 credits); a coin inserted during the game updates the credit shown;
+- **inputs**: 8 bits (UP, DOWN, LEFT, RIGHT, BUTTON 1-3, START) instead of the 6 of the miniVIC;
+- **game over**: back to the title after 10 s if nobody presses a button (attract mode);
+- same save zone as the miniVIC game, so the records stay the same;
+- without the credit entries of the Arcade BIOS the game runs in free play, and on a miniVIC
+  (no Arcade BIOS) BUTTON 1 = 1 player, BUTTON 2 = 2 players.
+
+### 📚 `lib/arcade.asm`
+
+| Routine | Use |
+| :--- | :--- |
+| `ARC_INIT` | A = most players of the game (1-2): finds the Arcade BIOS and its credits |
+| `ARC_JOY` | A = player 1, X = player 2, 1 = pressed (bit 6 BUTTON 3, bit 7 START on the cabinet) |
+| `ARC_START` | at every frame of the title: A = players of the game that starts (credits taken), 0 = none |
+| `ARC_STATE` | C = 1 when the texts changed: `ARC_MSG` points to the title line (20 characters), `ARC_CTXT` is the credit line (9 characters) |
+| `ARC_DIRTY`, `ARC_HOLD` | draw the texts again at the next `ARC_STATE`; the buttons held now are not new presses |
+
+The game gives 16 bytes of free RAM in `ARC_VAR` and includes the library with `include "../lib/arcade.asm"`.
+It uses the Arcade BIOS entries `JT_ARC_CREDITS` (`$FD86`: A = credits, C = 1 free play) and
+`JT_ARC_USE_CREDIT` (`$FD89`: A = credits to take, C = 1 not enough).
+
+### 🔨 Build and test
+
+```sh
+powershell -File tools/build.ps1                  # all the games of games/ into bin/
+powershell -File tools/build.ps1 space_invaders   # one game
+```
+
+The path of `vasm6502_oldstyle.exe` goes in the first line of `vasm.path` (not in git) or in the `VASM`
+variable. `tools/arcade_sim.js` is the headless emulator of miniVIC_games (`tools/minivic.js`) with the
+Arcade BIOS entries, the COIN inputs and the credits counted at every NMI. `node tools/test_credits.js [game ...]`
+runs every adapted game in it: no start without credits, one coin = one credit, P2 START needs two credits, at
+most 9 credits, free play, Arcade BIOS without credits, miniVIC buttons, and back to the title after GAME OVER.
 
 ---
 

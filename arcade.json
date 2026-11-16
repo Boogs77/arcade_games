@@ -33,7 +33,7 @@
       "name": "Asteroids",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "asteroids.bin"
       },
       "zone": 8,
@@ -43,11 +43,11 @@
       "description": "Atari 1979: vector-style asteroids that split in three sizes, large and small saucers, hyperspace and the famous heartbeat. Players take turns.",
       "preview": "previews/asteroids.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -57,7 +57,7 @@
       "name": "Breakout",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "breakout.bin"
       },
       "zone": 7,
@@ -67,11 +67,11 @@
       "description": "Atari 1976: 8 rows of bricks in four colours, the ball speeds up and the paddle shrinks when you break through. Two walls, players take turns.",
       "preview": "previews/breakout.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -129,7 +129,7 @@
       "name": "Centipede",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "centipede.bin"
       },
       "zone": 3,
@@ -139,11 +139,11 @@
       "description": "The classic arcade: shoot the centipede through the mushroom field, watch out for the flea and the spider. Infinite levels.",
       "preview": "previews/centipede.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -369,7 +369,7 @@
       "name": "Gravitar",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "gravitar.bin"
       },
       "zone": 16,
@@ -379,11 +379,11 @@
       "description": "Atari 1982: fly from planet to planet of 3 solar systems while the death star pulls the ship in, blast the bunkers, pull up fuel cells with the tractor beam, raise the shield, fight the alien saucer in deep space and blow up the reactor of the red planet before the clock runs out. Then the universe changes: negative gravity, invisible landscape, both. Players take turns.",
       "preview": "previews/gravitar.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -537,7 +537,7 @@
       "name": "Lunar Lander",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "lunar_lander.bin"
       },
       "zone": 5,
@@ -547,11 +547,11 @@
       "description": "Land the module softly on the moon pads: smaller pads pay more, plus a leftover fuel bonus. 6 moon maps, 3 landers. Full bitmap graphics.",
       "preview": "previews/lunar_lander.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -561,7 +561,7 @@
       "name": "Missile Command",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "missile_command.bin"
       },
       "zone": 4,
@@ -571,11 +571,11 @@
       "description": "Defend 6 cities from incoming missiles using 3 bases. The second player can join at any time. Full bitmap graphics.",
       "preview": "previews/missile_command.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -681,7 +681,7 @@
       "name": "Quantum",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "quantum.bin"
       },
       "zone": 17,
@@ -691,11 +691,11 @@
       "description": "Atari 1982: guide your probe with inertia like a trackball to draw loops around particles and destroy them. Multiple particles in one loop multiply the score. Progressively harder waves with nuclei that release positrons, splitters that divide and pulsars that hunt. Players take turns.",
       "preview": "previews/quantum.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -873,7 +873,7 @@
       "name": "Space Invaders",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "space_invaders.bin"
       },
       "zone": 9,
@@ -883,11 +883,11 @@
       "description": "Taito 1978: 55 invaders that march one at a time, shields that crumble pixel by pixel, three kinds of bombs, mystery saucer and the four-note march. Colour bands of the cabinet overlay.",
       "preview": "previews/space_invaders.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }

@@ -142,8 +142,8 @@ def check(cat, dirs):
             err(where, 'controls: buttons 1-3, start true/false')
         c = e.get('credits', {})
         if c.get('mode') not in ('launch', 'game') or c.get('default') not in ('free', 'coin') \
-                or c.get('coins') not in range(1, 10):
-            err(where, 'credits: mode launch/game, default free/coin, coins 1-9')
+                or c.get('coins') != 1:
+            err(where, 'credits: mode launch/game, default free/coin, coins 1 (one coin = one credit)')
         if c.get('mode') == 'game' and not e.get('controls', {}).get('start'):
             err(where, 'credits.mode "game" needs a game that uses START (controls.start)')
     if not any(e.get('kind') == 'music' for e in entries) and cat.get('songs'):

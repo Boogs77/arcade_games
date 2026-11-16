@@ -167,6 +167,9 @@ The binaries are looked up in the sibling folders `../MiniVIC Games/bin` and `..
 | Warlords | 10 | catches and throws, like buttons 1 and 2 | START works during the demo of the four computers and on the table of the records |
 | Wormer | 32 | - | |
 
+Little 6502 Guy, Times Tables and the three Zork adventures have no game to start with START: they stay as on
+the miniVIC, in `launch` mode (the Arcade BIOS takes the credit when they are chosen in the menu).
+
 Every adapted game works the same way:
 - **title**: `INSERT COIN`, `PRESS 1P START` (one credit), `PRESS 1P OR 2P START` (two credits or more, or
   free play) and `CREDIT 0n` / `FREE PLAY`; **P1 START** = 1 player (1 credit), **P2 START** = 2 players

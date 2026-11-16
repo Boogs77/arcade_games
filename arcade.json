@@ -225,7 +225,7 @@
       "name": "Crystal Gardens",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "crystal_gardens.bin"
       },
       "zone": 24,
@@ -236,10 +236,10 @@
       "preview": "previews/crystal_gardens.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -249,7 +249,7 @@
       "name": "Deep Space Miner",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "deep_space_miner.bin"
       },
       "zone": 27,
@@ -260,10 +260,10 @@
       "preview": "previews/deep_space_miner.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -513,7 +513,7 @@
       "name": "Lix",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "lix.bin"
       },
       "zone": 50,
@@ -524,10 +524,10 @@
       "preview": "previews/lix.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -585,7 +585,7 @@
       "name": "Mole Hole",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "mole_hole.bin"
       },
       "zone": 41,
@@ -595,11 +595,11 @@
       "description": "An original digging game: Mole the mole digs tunnels under a vegetable garden, through soil, clay, gravel and rock. Grubs follow the tunnels and now and then creep through the earth, the mole cricket digs new tunnels of its own. Mole's ice ray freezes a bug a little more at every hit: the third time it becomes a block of ice and breaks, worth more the deeper it is.",
       "preview": "previews/mole_hole.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -633,7 +633,7 @@
       "name": "Paint Duel",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "paint_duel.bin"
       },
       "zone": 43,
@@ -643,11 +643,11 @@
       "description": "An original paint-trail duel: two painters push their rollers over a polished floor, and every roller leaves a stripe of wet paint behind. The rollers never stop; the joystick turns them left or right. Roll into wet paint (yours or the other's), the skirting board, a paint can or the table and the round is lost. The button gives a short sprint, three a round.",
       "preview": "previews/paint_duel.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -753,7 +753,7 @@
       "name": "Robo Vac",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "robo_vac.bin"
       },
       "zone": 38,
@@ -764,10 +764,10 @@
       "preview": "previews/robo_vac.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -777,7 +777,7 @@
       "name": "Room",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "room.bin"
       },
       "zone": 34,
@@ -788,10 +788,10 @@
       "preview": "previews/room.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }

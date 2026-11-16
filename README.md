@@ -131,6 +131,8 @@ The binaries are looked up in the sibling folders `../MiniVIC Games/bin` and `..
 | Cheese Chase | 51 | - | |
 | Cloud Raider | 23 | - | |
 | Core Runner | 26 | - | |
+| Crystal Gardens | 24 | - | records RAM moved to `$0D00` (sector buffer over the player blocks) and `$0F00` to make room for the library |
+| Deep Space Miner | 27 | - | |
 | Defender | 11 | hyperspace (today buttons 1 and 2 together) | |
 | Dune Ranger | 28 | - | |
 | Exerion | 19 | - | |
@@ -140,13 +142,18 @@ The binaries are looked up in the sibling folders `../MiniVIC Games/bin` and `..
 | Hedge Hop | 40 | - | |
 | Joust | 18 | flaps, like button 1 | |
 | Lighthouse Keeper | 42 | jumps, like button 1 | |
+| Lix | 50 | - | |
 | Lunar Lander | 5 | main engine, like UP and the other buttons | screen copy moved to `$4800` to make room for the library |
 | Missile Command | 4 | fires from the right base | on the cabinet buttons 1-3 = left, centre, right base as on the original (an empty base: the nearest one); elsewhere button 1 = nearest, 2 = centre |
+| Mole Hole | 41 | ice ray, like button 1 | |
 | Moon Cresta | 14 | fires and retro rockets, like button 1 | |
+| Paint Duel | 43 | sprint, like button 1 | P1 START = 1 player against the computer, P2 START = 2 players |
 | Pastry Panic | 53 | icing sugar, like button 1 | |
 | Quantum | 17 | brakes, like buttons 1 and 2 | |
 | Radar Scope | 12 | laser, like button 1 | |
 | Robert | 22 | long jump, like button 1 | the first round has no enemies, as on the miniVIC: a game left alone does not end |
+| Robo Vac | 38 | - | |
+| Room | 34 | - | |
 | Sky Squirrel | 33 | - | |
 | Sky Tug | 29 | - | |
 | Space Firebird | 13 | - | |

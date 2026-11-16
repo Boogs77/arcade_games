@@ -10,7 +10,7 @@
 //   free play, Arcade BIOS without credits, miniVIC (BUTTON 1 / BUTTON 2) start the game
 //   game over: with nobody at the controls (button 1 every 2 s) the game goes back to TITLE by itself
 // The title screens go to dev/shots/<game>_*.png when the folder dev/ exists.
-// GAME_OVER_MIN = minutes of play allowed for the game over (default 12; Warlords needs about 20).
+// GAME_OVER_MIN = minutes of play allowed for the game over (default 12, or IDLE_MIN of the game).
 
 const fs = require('fs');
 const path = require('path');
@@ -20,9 +20,11 @@ const { MiniVIC } = require('./minivic');
 
 const ROOT = path.join(__dirname, '..');
 const START = 0x80, B1 = 0x10, B2 = 0x20;
-const GAME_OVER_FRAMES = 60 * 60 * (+process.env.GAME_OVER_MIN || 12);   // minutes of play without anybody
-// games that never end while nobody moves (Robert: no enemies on the first round): a hop every 2 s too
-const IDLE_MOVE = { robert: 0x02 };
+// game over with nobody at the controls: button 1 every 2 s (games that wait for a serve), at most 12 minutes;
+// some games need something else: Robert a hop too (no enemies on the first round), Room no shots at all
+// (standing still it kills everything that comes), Warlords and Room more time
+const IDLE = { robert: [B1, 0x02], room: [0, 0] };
+const IDLE_MIN = { warlords: 40, room: 25 };
 
 function vasmPath() {
   if (process.env.VASM) return process.env.VASM;
@@ -45,7 +47,7 @@ function build(name) {
 
 // the simulator, with a watch on the addresses: hit[name] = frame of the first visit after reset()
 function watch(m, sym) {
-  const names = ['TITLE', 'NEW_GAME', 'SELECT'].filter(n => sym[n] !== undefined);
+  const names = ['TITLE', 'NEW_GAME', 'NEW_MATCH', 'SELECT'].filter(n => sym[n] !== undefined);
   const at = new Map(names.map(n => [sym[n], n]));
   m.hit = {};
   const orig = m.trySd.bind(m);
@@ -67,7 +69,7 @@ function testGame(name) {
   const press = (m, p, bits) => { m.joy[p] |= bits; run(m, 6); m.joy[p] &= ~bits; run(m, 6); };
   const coin = (m, p) => { m.coin[p] = true; run(m, 3); m.coin[p] = false; run(m, 3); };
   const shot = (m, n) => shots && fs.writeFileSync(path.join(shots, `${name}_${n}.png`), m.vdp.png(2));
-  const started = m => m.hit.NEW_GAME !== undefined || m.hit.SELECT !== undefined;
+  const started = m => m.hit.NEW_GAME !== undefined || m.hit.NEW_MATCH !== undefined || m.hit.SELECT !== undefined;
   // players: NPL, or CPU_ON (1 = one player against the computer) in the duel games
   const players = m => sym.NPL !== undefined ? m.mem[sym.NPL] : (m.mem[sym.CPU_ON] ? 1 : 2);
   const fails = [];
@@ -103,8 +105,10 @@ function testGame(name) {
   // game over of that 1-player game: nobody at the controls (the computer wins the duels)
   m.hit.TITLE = undefined;
   let f = 0;
+  const GAME_OVER_FRAMES = 60 * 60 * (+process.env.GAME_OVER_MIN || IDLE_MIN[name] || 12);
+  const idle = IDLE[name] || [B1, 0];
   while (m.hit.TITLE === undefined && f < GAME_OVER_FRAMES) {
-    m.joy[0] = m.joy[1] = f % 120 < 4 ? B1 : f % 120 < 8 ? (IDLE_MOVE[name] || 0) : 0;   // button 1 every 2 s: games that wait for a serve
+    m.joy[0] = m.joy[1] = f % 120 < 4 ? idle[0] : f % 120 < 8 ? idle[1] : 0;
     m.runFrame(); f++;
   }
   m.joy[0] = m.joy[1] = 0;

@@ -125,7 +125,15 @@ The binaries are looked up in the sibling folders `../MiniVIC Games/bin` and `..
 | 1vs1 | 2 | shoots or jumps, like button 1 | P1 START = 1 player against the computer, P2 START = 2 players; START works during the title music |
 | Asteroids | 8 | thrust, like UP (the THRUST button of the original) | |
 | Breakout | 7 | serves, like buttons 1 and 2 | |
+| Brick Drop | 54 | - | |
+| Bubbles | 20 | - | |
 | Centipede | 3 | fires, like buttons 1 and 2 | START works during the title music |
+| Cheese Chase | 51 | - | |
+| Cloud Raider | 23 | - | |
+| Core Runner | 26 | - | |
+| Defender | 11 | hyperspace (today buttons 1 and 2 together) | |
+| Dune Ranger | 28 | - | |
+| Exerion | 19 | - | |
 | Gravitar | 16 | thrust, like UP (the THRUST button of the original) | |
 | Lunar Lander | 5 | main engine, like UP and the other buttons | screen copy moved to `$4800` to make room for the library |
 | Missile Command | 4 | fires from the right base | on the cabinet buttons 1-3 = left, centre, right base as on the original (an empty base: the nearest one); elsewhere button 1 = nearest, 2 = centre |

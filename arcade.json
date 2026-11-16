@@ -81,7 +81,7 @@
       "name": "Brick Drop",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "brick_drop.bin"
       },
       "zone": 54,
@@ -92,10 +92,10 @@
       "preview": "previews/brick_drop.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -105,7 +105,7 @@
       "name": "Bubbles",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "bubbles.bin"
       },
       "zone": 20,
@@ -116,10 +116,10 @@
       "preview": "previews/bubbles.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -153,7 +153,7 @@
       "name": "Cheese Chase",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "cheese_chase.bin"
       },
       "zone": 51,
@@ -164,10 +164,10 @@
       "preview": "previews/cheese_chase.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -177,7 +177,7 @@
       "name": "Cloud Raider",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "cloud_raider.bin"
       },
       "zone": 23,
@@ -188,10 +188,10 @@
       "preview": "previews/cloud_raider.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -201,7 +201,7 @@
       "name": "Core Runner",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "core_runner.bin"
       },
       "zone": 26,
@@ -212,10 +212,10 @@
       "preview": "previews/core_runner.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -273,7 +273,7 @@
       "name": "Defender",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "defender.bin"
       },
       "zone": 11,
@@ -283,11 +283,11 @@
       "description": "Williams 1981: a scrolling planet that wraps around, scanner, landers kidnapping humanoids, mutants, bombers, pods, swarmers and baiters; laser, smart bombs, hyperspace.",
       "preview": "previews/defender.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -297,7 +297,7 @@
       "name": "Dune Ranger",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "dune_ranger.bin"
       },
       "zone": 28,
@@ -308,10 +308,10 @@
       "preview": "previews/dune_ranger.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -321,7 +321,7 @@
       "name": "Exerion",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "exerion.bin"
       },
       "zone": 19,
@@ -332,10 +332,10 @@
       "preview": "previews/exerion.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }

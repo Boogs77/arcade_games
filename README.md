@@ -134,10 +134,18 @@ The binaries are looked up in the sibling folders `../MiniVIC Games/bin` and `..
 | Defender | 11 | hyperspace (today buttons 1 and 2 together) | |
 | Dune Ranger | 28 | - | |
 | Exerion | 19 | - | |
+| Ghost & Ghust | 31 | - | |
 | Gravitar | 16 | thrust, like UP (the THRUST button of the original) | |
+| Haunted Keep | 52 | shoots the bow, like button 1 | |
+| Hedge Hop | 40 | - | |
+| Joust | 18 | flaps, like button 1 | |
+| Lighthouse Keeper | 42 | jumps, like button 1 | |
 | Lunar Lander | 5 | main engine, like UP and the other buttons | screen copy moved to `$4800` to make room for the library |
 | Missile Command | 4 | fires from the right base | on the cabinet buttons 1-3 = left, centre, right base as on the original (an empty base: the nearest one); elsewhere button 1 = nearest, 2 = centre |
+| Moon Cresta | 14 | fires and retro rockets, like button 1 | |
+| Pastry Panic | 53 | icing sugar, like button 1 | |
 | Quantum | 17 | brakes, like buttons 1 and 2 | |
+| Radar Scope | 12 | laser, like button 1 | |
 | Space Invaders | 9 | fires, like buttons 1 and 2 | pilot game; CREDIT also on the bottom row during the game, as on the cabinet |
 | Tank | 1 | fires, like button 2 | P1 START = 1 player against the computer, P2 START = 2 players; START works during the title music |
 | The Warriors | 6 | special move (today buttons 1 and 2 together) | P1 START = 1 player against the computer, P2 START = 2 players |

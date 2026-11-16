@@ -345,7 +345,7 @@
       "name": "Ghost & Ghust",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "ghost_ghust.bin"
       },
       "zone": 31,
@@ -356,10 +356,10 @@
       "preview": "previews/ghost_ghust.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -393,7 +393,7 @@
       "name": "Haunted Keep",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "haunted_keep.bin"
       },
       "zone": 52,
@@ -403,11 +403,11 @@
       "description": "An original maze shooter: Sir Bram the knight walks the 64 halls of a haunted castle, seen from above. Hold a button and push a direction to shoot an arrow in one of eight directions. The suits of armor walk towards him and break on the walls, on each other and under the arrows; from the third hall on they throw axes, more often and faster hall after hall.",
       "preview": "previews/haunted_keep.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -417,7 +417,7 @@
       "name": "Hedge Hop",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "hedge_hop.bin"
       },
       "zone": 40,
@@ -428,10 +428,10 @@
       "preview": "previews/hedge_hop.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -441,7 +441,7 @@
       "name": "Joust",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "joust.bin"
       },
       "zone": 18,
@@ -451,11 +451,11 @@
       "description": "Williams 1982: a knight on a flying ostrich, and a second one on a stork with both players at the same time. Flap to climb: the higher lance wins. Bounders, Hunters and Shadow Lords leave eggs to pick up before they hatch, the pterodactyl must be hit in the beak, the hand of the troll grabs who flies low over the lava and the bridge burns away. Survival, Team, Gladiator and Egg waves.",
       "preview": "previews/joust.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -465,7 +465,7 @@
       "name": "Lighthouse Keeper",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "lighthouse_keeper.bin"
       },
       "zone": 42,
@@ -475,11 +475,11 @@
       "description": "An original climbing game: on a stormy night Gus the keeper climbs back to relight his lighthouse, while Squawk the seagull throws coconuts that roll down the sloping planks and now and then down a ladder. Jump over them, or take a broom and sweep them away for a few seconds.",
       "preview": "previews/lighthouse_keeper.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -609,7 +609,7 @@
       "name": "Moon Cresta",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "moon_cresta.bin"
       },
       "zone": 14,
@@ -619,11 +619,11 @@
       "description": "Nichibutsu 1980: a three-stage rocket where every stage is a life, timed docking with retro rockets for a bonus and more firepower, and waves of Cold Eyes that split in two, Super Flies, Four-Ds, meteors and Atomic Piles, with a start tune. Players take turns.",
       "preview": "previews/moon_cresta.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -657,7 +657,7 @@
       "name": "Pastry Panic",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "pastry_panic.bin"
       },
       "zone": 53,
@@ -667,11 +667,11 @@
       "description": "An original platform game: Chef Pip builds four cakes in a pastry shop of shelves and ladders. Walk over a cake layer (sponge, cream, chocolate, icing) from end to end and it falls to the next shelf; a layer falling on another one pushes it down, and under the last shelf the layers pile up on the plates.",
       "preview": "previews/pastry_panic.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -705,7 +705,7 @@
       "name": "Radar Scope",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "radar_scope.bin"
       },
       "zone": 12,
@@ -715,11 +715,11 @@
       "description": "Nintendo 1980: a field in perspective with a blue sky and a curved radar grid, 48 Gamma Raiders that hover forward, dive and drop decoys, and a damage meter that slows down the laser. Players take turns.",
       "preview": "previews/radar_scope.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }

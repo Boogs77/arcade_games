@@ -4,12 +4,13 @@
 //   node tools/test_credits.js space_invaders breakout ...   (no names: every game of games/)
 //
 // Every game is assembled again with a listing (vasm, path in vasm.path or VASM) to find the
-// addresses of TITLE, NEW_GAME and NPL (players, 2-player games only). Checks:
+// addresses of TITLE, NEW_GAME (or SELECT) and NPL or CPU_ON (players, 2-player games). Checks:
 //   coins:  START without credits does nothing; one coin = one credit; P2 START needs 2 credits;
 //           P1 START with a credit starts and takes it; at most 9 credits
 //   free play, Arcade BIOS without credits, miniVIC (BUTTON 1 / BUTTON 2) start the game
 //   game over: with nobody at the controls (button 1 every 2 s) the game goes back to TITLE by itself
 // The title screens go to dev/shots/<game>_*.png when the folder dev/ exists.
+// GAME_OVER_MIN = minutes of play allowed for the game over (default 12; Warlords needs about 20).
 
 const fs = require('fs');
 const path = require('path');
@@ -19,7 +20,7 @@ const { MiniVIC } = require('./minivic');
 
 const ROOT = path.join(__dirname, '..');
 const START = 0x80, B1 = 0x10, B2 = 0x20;
-const GAME_OVER_FRAMES = 60 * 60 * 5;           // 5 minutes of play without anybody
+const GAME_OVER_FRAMES = 60 * 60 * (+process.env.GAME_OVER_MIN || 12);   // minutes of play without anybody
 
 function vasmPath() {
   if (process.env.VASM) return process.env.VASM;
@@ -42,7 +43,7 @@ function build(name) {
 
 // the simulator, with a watch on the addresses: hit[name] = frame of the first visit after reset()
 function watch(m, sym) {
-  const names = ['TITLE', 'NEW_GAME'].filter(n => sym[n] !== undefined);
+  const names = ['TITLE', 'NEW_GAME', 'SELECT'].filter(n => sym[n] !== undefined);
   const at = new Map(names.map(n => [sym[n], n]));
   m.hit = {};
   const orig = m.trySd.bind(m);
@@ -64,7 +65,9 @@ function testGame(name) {
   const press = (m, p, bits) => { m.joy[p] |= bits; run(m, 6); m.joy[p] &= ~bits; run(m, 6); };
   const coin = (m, p) => { m.coin[p] = true; run(m, 3); m.coin[p] = false; run(m, 3); };
   const shot = (m, n) => shots && fs.writeFileSync(path.join(shots, `${name}_${n}.png`), m.vdp.png(2));
-  const started = m => m.hit.NEW_GAME !== undefined;
+  const started = m => m.hit.NEW_GAME !== undefined || m.hit.SELECT !== undefined;
+  // players: NPL, or CPU_ON (1 = one player against the computer) in the duel games
+  const players = m => sym.NPL !== undefined ? m.mem[sym.NPL] : (m.mem[sym.CPU_ON] ? 1 : 2);
   const fails = [];
   const check = (c, t) => { if (!c) fails.push(t); };
   const TITLE_WAIT = 400;                         // intro tunes: the title must be ready by then
@@ -81,16 +84,22 @@ function testGame(name) {
     check(!started(m) && m.credits === 1, 'P2 START with 1 credit starts');
     coin(m, 1); run(m, 30); shot(m, 'coin2');
     press(m, 1, START); run(m, 60);
-    check(started(m) && m.credits === 0 && m.mem[sym.NPL] === 2, 'P2 START with 2 credits: no 2-player game');
+    check(started(m) && m.credits === 0 && players(m) === 2, 'P2 START with 2 credits: no 2-player game');
   } else {
     press(m, 0, START); run(m, 60);
     check(started(m) && m.credits === 0, 'P1 START with 1 credit: no game');
   }
   for (let i = 0; i < 12; i++) coin(m, 0);
   check(m.credits === 9, 'more than 9 credits');
-  // game over: nobody at the controls
+
+  // one player with a credit (2-player games)
+  if (maxp === 2) {
+    m = watch(new ArcadeSim(data), sym);
+    run(m, TITLE_WAIT); coin(m, 0); press(m, 0, START); run(m, 60);
+    check(started(m) && m.credits === 0 && players(m) === 1, 'P1 START with 1 credit: no 1-player game');
+  }
+  // game over of that 1-player game: nobody at the controls (the computer wins the duels)
   m.hit.TITLE = undefined;
-  m.credits = 0;
   let f = 0;
   while (m.hit.TITLE === undefined && f < GAME_OVER_FRAMES) {
     m.joy[0] = m.joy[1] = f % 120 < 4 ? B1 : 0;   // button 1 every 2 s: games that wait for a serve
@@ -99,18 +108,11 @@ function testGame(name) {
   m.joy[0] = m.joy[1] = 0;
   check(m.hit.TITLE !== undefined, `no way back to the title in ${GAME_OVER_FRAMES / 3600} minutes`);
   run(m, 300); shot(m, 'after');
-
-  // one player with a credit (2-player games)
-  if (maxp === 2) {
-    m = watch(new ArcadeSim(data), sym);
-    run(m, TITLE_WAIT); coin(m, 0); press(m, 0, START); run(m, 60);
-    check(started(m) && m.credits === 0 && m.mem[sym.NPL] === 1, 'P1 START with 1 credit: no 1-player game');
-  }
   // free play
   m = watch(new ArcadeSim(data, { free: true }), sym);
   run(m, TITLE_WAIT); shot(m, 'free');
   press(m, maxp === 2 ? 1 : 0, START); run(m, 60);
-  check(started(m) && (maxp === 1 || m.mem[sym.NPL] === 2), 'free play: START does not start');
+  check(started(m) && (maxp === 1 || players(m) === 2), 'free play: START does not start');
   // Arcade BIOS without credits
   m = watch(new ArcadeSim(data, { credits: false }), sym);
   run(m, TITLE_WAIT);
@@ -120,7 +122,7 @@ function testGame(name) {
   m = watch(new MiniVIC(data), sym);
   run(m, TITLE_WAIT); shot(m, 'minivic');
   press(m, 0, maxp === 2 ? B2 : B1); run(m, 60);
-  check(started(m) && (maxp === 1 || m.mem[sym.NPL] === 2), 'miniVIC: the buttons do not start');
+  check(started(m) && (maxp === 1 || players(m) === 2), 'miniVIC: the buttons do not start');
 
   const end = 0x0FD0 + data.length;
   console.log(`${fails.length ? 'FAIL' : 'OK  '} ${name.padEnd(18)} ${maxp}P  code to $${end.toString(16).toUpperCase()}` +

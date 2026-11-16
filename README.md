@@ -122,14 +122,18 @@ The binaries are looked up in the sibling folders `../MiniVIC Games/bin` and `..
 
 | Game | Zone | Button 3 | Notes |
 | :--- | :---: | :--- | :--- |
+| 1vs1 | 2 | shoots or jumps, like button 1 | P1 START = 1 player against the computer, P2 START = 2 players; START works during the title music |
 | Asteroids | 8 | thrust, like UP (the THRUST button of the original) | |
 | Breakout | 7 | serves, like buttons 1 and 2 | |
-| Centipede | 3 | fires, like buttons 1 and 2 | |
+| Centipede | 3 | fires, like buttons 1 and 2 | START works during the title music |
 | Gravitar | 16 | thrust, like UP (the THRUST button of the original) | |
 | Lunar Lander | 5 | main engine, like UP and the other buttons | screen copy moved to `$4800` to make room for the library |
 | Missile Command | 4 | fires from the right base | on the cabinet buttons 1-3 = left, centre, right base as on the original (an empty base: the nearest one); elsewhere button 1 = nearest, 2 = centre |
 | Quantum | 17 | brakes, like buttons 1 and 2 | |
 | Space Invaders | 9 | fires, like buttons 1 and 2 | pilot game; CREDIT also on the bottom row during the game, as on the cabinet |
+| Tank | 1 | fires, like button 2 | P1 START = 1 player against the computer, P2 START = 2 players; START works during the title music |
+| The Warriors | 6 | special move (today buttons 1 and 2 together) | P1 START = 1 player against the computer, P2 START = 2 players |
+| Warlords | 10 | catches and throws, like buttons 1 and 2 | START works during the demo of the four computers and on the table of the records |
 
 Every adapted game works the same way:
 - **title**: `INSERT COIN`, `PRESS 1P START` (one credit), `PRESS 1P OR 2P START` (two credits or more, or
@@ -147,11 +151,12 @@ Every adapted game works the same way:
 | :--- | :--- |
 | `ARC_INIT` | A = most players of the game (1-2): finds the Arcade BIOS and its credits |
 | `ARC_JOY` | A = player 1, X = player 2, 1 = pressed (bit 6 BUTTON 3, bit 7 START on the cabinet) |
-| `ARC_START` | at every frame of the title: A = players of the game that starts (credits taken), 0 = none |
+| `ARC_START` | at every frame of the title: A = players of the game that starts (credits taken, also kept in `ARC_PLAYERS`), 0 = none |
 | `ARC_STATE` | C = 1 when the texts changed: `ARC_MSG` points to the title line (20 characters), `ARC_CTXT` is the credit line (9 characters) |
 | `ARC_DIRTY`, `ARC_HOLD` | draw the texts again at the next `ARC_STATE`; the buttons held now are not new presses |
+| `ARC_TSET`, `ARC_TICK` | a timer of A/X frames; `ARC_TICK` at every frame gives C = 1 when it is over (GAME OVER back to the title) |
 
-The game gives 16 bytes of free RAM in `ARC_VAR` and includes the library with `include "../lib/arcade.asm"`.
+The game gives 24 bytes of free RAM in `ARC_VAR` (`$07C0` in the adapted games) and includes the library with `include "../lib/arcade.asm"`.
 It uses the Arcade BIOS entries `JT_ARC_CREDITS` (`$FD86`: A = credits, C = 1 free play) and
 `JT_ARC_USE_CREDIT` (`$FD89`: A = credits to take, C = 1 not enough).
 

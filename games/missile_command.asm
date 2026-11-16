@@ -188,6 +188,7 @@ CUR_YMIN    = 12
 CUR_YMAX    = 160
 BTN_MASK    = %01110000
 ARC_VAR     = $07C0        ; 24 bytes for lib/arcade.asm
+ARC_ROWS    = ARC_VAR+21   ; 2 bytes: rows of the credit lines (ARC_TEXT_AT)
 OVER_WAIT   = 600          ; game over: back to the title after 10 s
 
 ; ---------------- records on the SD (lib_records.asm, at the end of the file) ----------------
@@ -3607,11 +3608,20 @@ TITLE_BIG:
 ; the credit lines of the title (lib/arcade.asm), not while the table of the records is shown
 ARC_TITLE_TEXT:
   LDA REC_PG
-  BNE .tx_r
+  BEQ .tt_go
+  RTS
+.tt_go:
+  LDX #19
+  LDY #17
+  ; fall into ARC_TEXT_AT
+
+ARC_TEXT_AT:                   ; X = row of the title line, Y = row of the credit line
+  STX ARC_ROWS
+  STY ARC_ROWS+1
   JSR ARC_STATE
   BCC .tx_r
   JSR VDP_INT_OFF
-  LDA #19
+  LDA ARC_ROWS
   STA CELLR
   LDA #6
   STA CELLC
@@ -3622,7 +3632,7 @@ ARC_TITLE_TEXT:
   LDA ARC_MSG+1
   STA TP+1
   JSR ARC_PUTS
-  LDA #17
+  LDA ARC_ROWS+1
   STA CELLR
   LDA #11
   STA CELLC

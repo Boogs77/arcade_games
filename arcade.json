@@ -9,7 +9,7 @@
       "name": "1 vs 1 Basketball",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "1vs1.bin"
       },
       "zone": 2,
@@ -19,11 +19,11 @@
       "description": "One-on-one basketball with shots, jumps, steals and blocks. 2 and 3 point shots, first to 21 wins. Play against a friend or against the computer.",
       "preview": "previews/1vs1.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -969,7 +969,7 @@
       "name": "Tank vs Tank",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "tank.bin"
       },
       "zone": 1,
@@ -979,11 +979,11 @@
       "description": "Two tanks on a green battlefield: rotate, move and shoot. First to reach the winning score wins. Play against a friend or against the computer.",
       "preview": "previews/tank.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -993,7 +993,7 @@
       "name": "The Warriors",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "the_warriors.bin"
       },
       "zone": 6,
@@ -1003,11 +1003,11 @@
       "description": "Street Fighter style fighting game: 5 warriors, 6 stages, punch, kick, block and special move. Best of 3 rounds. Play against a friend or against the computer.",
       "preview": "previews/the_warriors.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -1065,7 +1065,7 @@
       "name": "Warlords",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "warlords.bin"
       },
       "zone": 10,
@@ -1075,11 +1075,11 @@
       "description": "Atari 1980: four castles, shields on an L-shaped track, catch and throw the fireball. 1 or 2 players against the computer castles; first to 3 rounds wins.",
       "preview": "previews/warlords.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }

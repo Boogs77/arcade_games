@@ -267,8 +267,12 @@ TITLE:
   JSR VDP_INT_ON
   LDX #SONG_TITLE              ; intro music: the button is read only at the end
   JSR PLAY_SONG
+  JSR ARC_HOLD
 .ti_w:
   JSR WAIT_FRAME
+  JSR ARC_TITLE_TEXT           ; the credit lines and START while the music plays too
+  JSR ARC_START
+  BNE .ti_w_go
   LDA MUS_ON
   BNE .ti_w
   JSR VDP_INT_OFF
@@ -280,6 +284,7 @@ TITLE:
   JSR VDP_INT_ON
   JSR REC_TITLE
   JSR TITLE_WAIT
+.ti_w_go:
   LDA FRAME_CNT                ; the moment you press the button seeds the random generator
   ORA #$01
   STA RND
@@ -2941,7 +2946,7 @@ ARC_TITLE_TEXT:
   INY
   CPY #9
   BNE .tx_c
-  LDX #$05
+  LDX #$02
 .tx_h:
   LDA ARC_RECH,X
   STA ARC_RECB,X

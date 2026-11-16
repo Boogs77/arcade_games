@@ -14,6 +14,7 @@
 ;              5 BUTTON 2, 6 BUTTON 3, 7 START                 ;
 ;   ARC_START  A = players of the game that starts now (1-2),  ;
 ;              0 = nobody: call it at every frame of the title ;
+;              (also kept in ARC_PLAYERS)                      ;
 ;   ARC_STATE  C = 1 when the texts below have changed since   ;
 ;              the last call (redraw them): ARC_MSG = pointer  ;
 ;              to the title line (20 characters + 0),          ;
@@ -55,6 +56,8 @@ ARC_TMP   = ARC_VAR+5
 ARC_MSG   = ARC_VAR+6        ; 2 bytes: pointer to the title line
 ARC_CTXT  = ARC_VAR+8        ; 10 bytes: "CREDIT 0n" or "FREE PLAY", 0
 ARC_TIMER = ARC_VAR+18       ; 2 bytes: frames left (ARC_TSET / ARC_TICK)
+ARC_PLAYERS = ARC_VAR+20     ; players of the last game started by ARC_START
+                             ; ARC_VAR+21..+23: free for the game
 
 ARC_INIT:
   STA ARC_MAXP
@@ -166,6 +169,7 @@ ARC_START:
 .as_ok:
   JSR ARC_DIRTY
   LDA ARC_TMP
+  STA ARC_PLAYERS
   RTS
 .as_none:
   LDA #$00

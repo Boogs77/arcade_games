@@ -729,7 +729,7 @@
       "name": "Robert",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "robert.bin"
       },
       "zone": 22,
@@ -739,11 +739,11 @@
       "description": "An original isometric cube-hopping game: Robert, a little robot on a pogo stick, hops diagonally across boards of cubes floating in the void and paints every top in the goal colour, without hopping off the edge. Four boards (diamond, hourglass, ring, twin towers) and four colour rules (one hop, two hops, every hop switches, a third hop undoes).",
       "preview": "previews/robert.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -801,7 +801,7 @@
       "name": "Sky Squirrel",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "sky_squirrel.bin"
       },
       "zone": 33,
@@ -812,10 +812,10 @@
       "preview": "previews/sky_squirrel.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -825,7 +825,7 @@
       "name": "Sky Tug",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "sky_tug.bin"
       },
       "zone": 29,
@@ -836,10 +836,10 @@
       "preview": "previews/sky_tug.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -849,7 +849,7 @@
       "name": "Space Firebird",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "space_firebird.bin"
       },
       "zone": 13,
@@ -860,10 +860,10 @@
       "preview": "previews/space_firebird.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -897,7 +897,7 @@
       "name": "Special Forces",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "special_forces.bin"
       },
       "zone": 25,
@@ -908,10 +908,10 @@
       "preview": "previews/special_forces.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -945,7 +945,7 @@
       "name": "Super Carlo",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "super_carlo.bin"
       },
       "zone": 30,
@@ -955,11 +955,11 @@
       "description": "An original single-screen platform game in a shipyard where a cruise ship is being built. Carlo the welder (and his mate Fabio, two players at the same time) clears the decks of rats, riveter robots and gulls that come in through the hatches: jump under a steel deck to bump it and turn over whoever walks on it, then kick them into the sea before they get up again, faster.",
       "preview": "previews/super_carlo.png",
       "controls": {
-        "buttons": 2,
-        "start": false
+        "buttons": 3,
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -1041,7 +1041,7 @@
       "name": "Turbo Horizon",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "turbo_horizon.bin"
       },
       "zone": 55,
@@ -1052,10 +1052,10 @@
       "preview": "previews/turbo_horizon.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }
@@ -1089,7 +1089,7 @@
       "name": "Wormer",
       "kind": "game",
       "bin": {
-        "source": "minivic",
+        "source": "arcade",
         "file": "wormer.bin"
       },
       "zone": 32,
@@ -1100,10 +1100,10 @@
       "preview": "previews/wormer.png",
       "controls": {
         "buttons": 2,
-        "start": false
+        "start": true
       },
       "credits": {
-        "mode": "launch",
+        "mode": "game",
         "default": "free",
         "coins": 1
       }

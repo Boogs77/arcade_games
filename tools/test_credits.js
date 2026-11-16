@@ -21,6 +21,8 @@ const { MiniVIC } = require('./minivic');
 const ROOT = path.join(__dirname, '..');
 const START = 0x80, B1 = 0x10, B2 = 0x20;
 const GAME_OVER_FRAMES = 60 * 60 * (+process.env.GAME_OVER_MIN || 12);   // minutes of play without anybody
+// games that never end while nobody moves (Robert: no enemies on the first round): a hop every 2 s too
+const IDLE_MOVE = { robert: 0x02 };
 
 function vasmPath() {
   if (process.env.VASM) return process.env.VASM;
@@ -102,7 +104,7 @@ function testGame(name) {
   m.hit.TITLE = undefined;
   let f = 0;
   while (m.hit.TITLE === undefined && f < GAME_OVER_FRAMES) {
-    m.joy[0] = m.joy[1] = f % 120 < 4 ? B1 : 0;   // button 1 every 2 s: games that wait for a serve
+    m.joy[0] = m.joy[1] = f % 120 < 4 ? B1 : f % 120 < 8 ? (IDLE_MOVE[name] || 0) : 0;   // button 1 every 2 s: games that wait for a serve
     m.runFrame(); f++;
   }
   m.joy[0] = m.joy[1] = 0;

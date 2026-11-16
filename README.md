@@ -146,10 +146,18 @@ The binaries are looked up in the sibling folders `../MiniVIC Games/bin` and `..
 | Pastry Panic | 53 | icing sugar, like button 1 | |
 | Quantum | 17 | brakes, like buttons 1 and 2 | |
 | Radar Scope | 12 | laser, like button 1 | |
+| Robert | 22 | long jump, like button 1 | the first round has no enemies, as on the miniVIC: a game left alone does not end |
+| Sky Squirrel | 33 | - | |
+| Sky Tug | 29 | - | |
+| Space Firebird | 13 | - | |
 | Space Invaders | 9 | fires, like buttons 1 and 2 | pilot game; CREDIT also on the bottom row during the game, as on the cabinet |
+| Special Forces | 25 | - | |
+| Super Carlo | 30 | jumps, like button 1 | |
 | Tank | 1 | fires, like button 2 | P1 START = 1 player against the computer, P2 START = 2 players; START works during the title music |
 | The Warriors | 6 | special move (today buttons 1 and 2 together) | P1 START = 1 player against the computer, P2 START = 2 players |
+| Turbo Horizon | 55 | - | |
 | Warlords | 10 | catches and throws, like buttons 1 and 2 | START works during the demo of the four computers and on the table of the records |
+| Wormer | 32 | - | |
 
 Every adapted game works the same way:
 - **title**: `INSERT COIN`, `PRESS 1P START` (one credit), `PRESS 1P OR 2P START` (two credits or more, or

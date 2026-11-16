@@ -159,6 +159,7 @@ The binaries are looked up in the sibling folders `../MiniVIC Games/bin` and `..
 | Space Firebird | 13 | - | |
 | Space Invaders | 9 | fires, like buttons 1 and 2 | pilot game; CREDIT also on the bottom row during the game, as on the cabinet |
 | Special Forces | 25 | - | |
+| Stargate | 15 | hyperspace (today buttons 1 and 2 together) | |
 | Super Carlo | 30 | jumps, like button 1 | |
 | Tank | 1 | fires, like button 2 | P1 START = 1 player against the computer, P2 START = 2 players; START works during the title music |
 | The Warriors | 6 | special move (today buttons 1 and 2 together) | P1 START = 1 player against the computer, P2 START = 2 players |

@@ -84,13 +84,16 @@ The cabinet SD is separate from the full miniVIC SD (`update_sd.py --mode full` 
 
 1. BOGS directory with the programs of `arcade.json` only, plus the songs when `songs` is `"all"`
    (no applications, no keyboard versions).
-2. Arcade catalog from sector `24576` (`$00C00000`), format of the Arcade BIOS (`ARCADE.md` of arcade_bios):
+2. Arcade catalog from sector `24576` (`$00C00000`), format of the Arcade BIOS
+   ([`ARCADE.md`](https://github.com/Boogs77/arcade_bios/blob/main/ARCADE.md) of arcade_bios):
    header `"ARCD"`, index of 32 bytes per entry, page of 8 sectors per entry (text, 128x96 preview patterns
    and colours). Entries sorted as described above; the slot of each entry is its real SD slot.
 3. The save area (from sector `32768`) is never written.
 
-Not stored on the SD yet (catalog version 1): `zone`, `controls` and `credits`. They will go into the unused
-index bytes `+3`-`+5` with catalog version 2, together with the credits and the SERVICE menu of the Arcade BIOS.
+With catalog version 2 the SD also stores `controls` and `credits` (index byte `+3`: bit 0 `credits.default` is
+`coin`, bit 1 `credits.mode` is `game`, bit 2 `controls.start`, bit 3 three buttons) and `zone` (index byte `+4`,
+0 = none). The Arcade BIOS uses them for the credits, FREE PLAY or COIN per game. The full layout is in the
+[bo6502-SDbuilder](https://github.com/Boogs77/bo6502-SDbuilder#arcade-sd-the-arcade6502-cabinet) README.
 
 ---
 
@@ -207,6 +210,30 @@ variable. `tools/arcade_sim.js` is the headless emulator of miniVIC_games (`tool
 Arcade BIOS entries, the COIN inputs and the credits counted at every NMI. `node tools/test_credits.js [game ...]`
 runs every adapted game in it: no start without credits, one coin = one credit, P2 START needs two credits, at
 most 9 credits, free play, Arcade BIOS without credits, miniVIC buttons, and back to the title after GAME OVER.
+
+---
+
+## ⚖️ Disclaimer
+
+The games in this repository are the cabinet versions of the [miniVIC_games](https://github.com/Boogs77/miniVIC_games),
+**fan-made tributes** to classic arcade games, written from scratch in 65C02 assembly as a **non-commercial,
+educational and demonstration project**.
+
+* All titles, characters, artwork, sounds and trademarks of the original games (such as *Asteroids*, *Breakout*,
+  *Bubbles*, *Centipede*, *Defender*, *Exerion*, *Gravitar*, *Joust*, *Lunar Lander*, *Missile Command*,
+  *Moon Cresta*, *Quantum*, *Radar Scope*, *Space Firebird*, *Space Invaders*, *Stargate*, *Street Fighter* and
+  *Warlords*) belong to their **respective owners**. Their names, and the maker and year in `arcade.json`, are used
+  only to identify the games that inspired these versions.
+* This project is **not affiliated with, endorsed or sponsored by** any of the rights holders, and claims no rights
+  over the original games.
+* No original program code or ROM data has been used: graphics and sounds are new re-creations, and the pictures in
+  `previews/` are screenshots of these versions. The Zork I-III story files are not in this repository: they come
+  from bo6502-SDbuilder, which puts them on the SD card under the MIT License that Microsoft released them with.
+  *Zork* is a trademark of its owner.
+* The songs of the MiniVIC Jukebox are described in the credits of
+  [bo6502-SDbuilder](https://github.com/Boogs77/bo6502-SDbuilder#credits).
+* No commercial use is intended. If you are a rights holder and have any concern, please
+  [open an issue](https://github.com/Boogs77/arcade_games/issues) and the material will be reviewed or removed promptly.
 
 ---
 

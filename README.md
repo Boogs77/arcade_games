@@ -16,6 +16,13 @@ This repository holds:
 
 ---
 
+## 🎬 Videos
+
+Five-minute explanatory videos, in Italian and English, with subtitles:
+
+* **The Arcade6502 cabinet: front-end, credits and catalog**: [Italiano](https://youtu.be/8jpY8511fZo)
+* **The whole project: from the modular BO6502 to miniPET, miniVIC and Arcade6502**: [Italiano](https://youtu.be/3ln8cZt3MQk) · [English](https://youtu.be/d8nvmrTR-eE)
+
 ## 📋 The catalog: `arcade.json`
 
 ```json

@@ -1,7 +1,7 @@
 # 🕹️ Arcade Games
 
 Games and SD card catalog of the **Arcade6502**, the cabinet version of the miniVIC (W65C02S, TMS9918A,
-2x AY-3-8910, two JAMMA control panels, no keyboard), run by the
+2x AY-3-8910, a single JAMMA interface with the controls of both players, no keyboard), run by the
 [Arcade BIOS](https://github.com/Boogs77/arcade_bios) front-end.
 
 This repository holds:
